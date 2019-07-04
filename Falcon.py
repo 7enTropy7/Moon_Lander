@@ -40,15 +40,13 @@ for i in range(episodes):
             flag=True
         
         total_episode_rewards = sum(agent.episode_rewards)
-        mean = np.mean(agent.episode_rewards)
-        var = np.var(agent.episode_rewards)
         if total_episode_rewards<-300:
             flag = True
         
         if flag == True:
             rewards_over_time.append(total_episode_rewards)
             max_reward = np.max(rewards_over_time)
-            if int(total_episode_rewards)>290 and i>9000:
+            if int(total_episode_rewards)>270 and i>2000:
                 render=True
             episode_max = np.argmax(rewards_over_time)
             if total_episode_rewards>=200:
