@@ -1,4 +1,4 @@
-# Lunar_Lander
+# Moon_Lander
 
 This is a Deep Q Network that operates in the "LunarLander-v2" environment of OpenAI Gym. This is a simplified 2D version of the reusable rockets that are currently being developed by Elon Musk at SpaceX. 
 
